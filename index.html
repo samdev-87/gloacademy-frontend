@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Delivery Food</title>
-</head>
+  </head>
 
-<body>
-    <header class="header">
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
         <div class="container">
-            <div class="header-box">
-                <div class="header-logo logo">
-                    <img src="./images/logo.png" alt="logo">
-                </div>
-                <div class="header-controls">Controls</div>
+          <div class="header-box">
+            <div class="header-logo logo">
+              <img src="./images/logo.png" alt="logo" />
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            Main
-        </div>
-    </main>
-    <footer class="footer">
-
-        <div class="container">
-            <div class="footer-box">
-                <div class="footer-logo logo">
-                    <img src="./images/logo.png" alt="logo">
-                </div>
-                <div class="footer-nav">Nav</div>
-                <div class="footer-social">Social</div>
+            <div class="header-controls">
+              <button class="btn btn-primary">
+                <img src="./images/icons/user.png" alt="user" />
+                Войти
+              </button>
+              <button class="btn btn-outline">
+                <img
+                  src="./images/icons/shopping-cart.png"
+                  alt="shopping-cart"
+                />
+                Корзина
+              </button>
             </div>
+          </div>
         </div>
-    </footer>
-</body>
+      </header>
 
+      <main class="main">
+        <div class="banner">
+          <div class="container">
+            <div class="banner-item">
+              <h2 class="banner-item--title">
+                Онлайн-сервис <br />
+                доставки еды на дом
+              </h2>
+              <p class="banner-item--subtitle">
+                Блюда из любимого ресторана привезет курьер в перчатках, маске и
+                с антисептиком
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="container">products</div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <div class="footer-logo logo">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <div class="footer-nav">
+              <ul>
+                <li>Ресторанам</li>
+                <li>Курьерам</li>
+                <li>Пресс-центр</li>
+                <li>Контакты</li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <img src="./images/social/INST.png" alt="INST" />
+              <img src="./images/social/FB.png" alt="FB" />
+              <img src="./images/social/VK.png" alt="VK" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
