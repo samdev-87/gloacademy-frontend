@@ -78,11 +78,9 @@ body {
 
 .main {
   flex-grow: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(245, 245, 245, 0) 1.04%,
-    #f5f5f5 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(245, 245, 245, 0) 1.04%,
+      #f5f5f5 100%);
 }
 
 .banner {
@@ -113,6 +111,50 @@ body {
   font-weight: 400;
   max-width: 50%;
   margin: 0;
+}
+
+.products {}
+
+.products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-header--title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.products-header--search {
+  min-width: 306px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  padding: 5px 12px;
+}
+
+.products-header--search:focus {
+  outline: none;
+  border: none;
+}
+
+.products-header--search::placeholder {
+  color: #bfbfbf;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 991px) {
+
+  .banner-item--title,
+  .banner-item--subtitle {
+    max-width: 100%;
+  }
 }
 
 .footer {
