@@ -18,9 +18,9 @@
     <header class="header">
       <div class="container">
         <div class="header-box">
-          <div class="header-logo logo">
+          <a href="./index.html" class="header-logo logo">
             <img src="./images/logo.png" alt="logo" />
-          </div>
+          </a>
           <div class="header-controls">
             <button class="btn btn-primary">
               <img src="./images/icons/user.png" alt="user" />
@@ -58,7 +58,7 @@
           </div>
 
           <div class="products-wrapper">
-            <div class="products-card">
+            <a href="./goods.html" class="products-card">
               <div class="products-card__image">
                 <img src="./images/rests/rest-1.jpg" alt="rest-1">
               </div>
@@ -77,7 +77,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="products-card">
               <div class="products-card__image">
                 <img src="./images/rests/rest-2.jpg" alt="rest-2">
@@ -183,12 +183,50 @@
       </div>
     </main>
 
+    <div class="cart-modal__overlay">
+      <div class="cart-modal">
+        <div class="cart-modal__header">
+          <h2 class="cart-modal__header--title">Корзина</h2>
+          <span class="cart-modal__header--close">
+            <img src="./images/icons/close.svg" alt="close">
+          </span>
+        </div>
+
+        <div class="cart-modal__body">
+          <div class="cart-item">
+            <p class="cart-item__title">Ролл угорь стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-modal__footer">
+          <div class="cart-modal__footer--price">
+            1250 ₽
+          </div>
+          <div class="cart-modal__footer--controls">
+            <button class="btn btn-primary">
+              Оформить заказ
+            </button>
+            <button class="btn btn-outline">
+              Отмена
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-box">
-          <div class="footer-logo logo">
+          <a href="./index.html" class="footer-logo logo">
             <img src="./images/logo.png" alt="logo" />
-          </div>
+          </a>
           <div class="footer-nav">
             <ul>
               <li>Ресторанам</li>
