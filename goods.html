@@ -9,7 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./script/index.js" defer></script>
   <title>Delivery Food</title>
 </head>
 
@@ -207,6 +208,44 @@
         </div>
       </div>
     </main>
+
+    <div class="cart-modal__overlay">
+      <div class="cart-modal">
+        <div class="cart-modal__header">
+          <h2 class="cart-modal__header--title">Корзина</h2>
+          <span class="cart-modal__header--close">
+            <img src="./images/icons/close.svg" alt="close">
+          </span>
+        </div>
+
+        <div class="cart-modal__body">
+          <div class="cart-item">
+            <p class="cart-item__title">Ролл угорь стандарт</p>
+            <div class="cart-item__controls">
+              <div class="cart-item__controls--price">250 ₽</div>
+
+              <button class="btn btn-outline">-</button>
+              <div class="cart-item__controls--count">1</div>
+              <button class="btn btn-outline">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-modal__footer">
+          <div class="cart-modal__footer--price">
+            1250 ₽
+          </div>
+          <div class="cart-modal__footer--controls">
+            <button class="btn btn-primary">
+              Оформить заказ
+            </button>
+            <button class="btn btn-outline">
+              Отмена
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
